@@ -1,0 +1,20 @@
+body {
+  // font-family: $pn-font-anglecia-regular;
+  direction: ltr;
+  text-align: left;
+  font-size: 14px;
+  position: relative;
+  z-index: 10;
+}
+
+button,
+a {
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}

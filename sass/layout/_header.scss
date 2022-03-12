@@ -1,0 +1,42 @@
+header {
+  #desktop_header {
+    background: $color-black;
+    height: $desktop-header-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    a.desktop-header-logo {
+      width: 120px;
+      height: 35px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .desktop-header-links {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      .header-link {
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
+        list-style: none;
+        .link {
+          text-decoration: none;
+          color: $color-white;
+          @include transition(all 0.2s ease-in-out);
+          &:hover,
+          .active {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  #mobile_header {
+  }
+}
